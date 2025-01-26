@@ -58,4 +58,8 @@
   .btn-secondary {
     @apply w-32 md:w-44 lg:w-64 text-[10px] md:text-sm px-4 py-2 text-blue-300 bg-gold rounded-md;
   }
+
+  .wrapper {
+    @apply px-3 md:px-6 lg:px-10 py-16 lg:py-20;
+  }
 }

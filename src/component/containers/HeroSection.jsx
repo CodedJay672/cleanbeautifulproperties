@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../shared/Button";
 
 const HeroSection = () => {
   return (
@@ -27,7 +28,7 @@ const HeroSection = () => {
               Connecting buyers and sellers with personalized expertise, market
               insights, and a commitment to excellence
             </p>
-            <button className="btn-primary">Schedule a Consultation</button>
+            <Button text="Schedule Consultation" />
           </div>
           <div className="absolute hidden md:block -top-10 -right-24 w-[700px]">
             <img
