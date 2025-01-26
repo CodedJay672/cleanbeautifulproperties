@@ -1,9 +1,11 @@
 import React from "react";
+import Footer from "../component/containers/Footer";
 
 const RootLayout = ({ children }) => {
   return (
-    <main className="w-full max-w-[1950px] px-2 md:px-6 lg:px-10 min-h-dvh bg-subtle-light">
+    <main className="w-full max-w-[1950px] min-h-dvh bg-subtle-light">
       {children}
+      <Footer />
     </main>
   );
 };

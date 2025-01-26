@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --hero-div: polygon(
+    0 83%,
+    9% 82%,
+    18% 82%,
+    25% 81%,
+    34% 78%,
+    43% 75%,
+    51% 70%,
+    59% 62%,
+    66% 55%,
+    72% 49%,
+    81% 46%,
+    87% 46%,
+    94% 45%,
+    100% 45%,
+    100% 0,
+    0 0
+  );
+}
+
+.hero-curve {
+  background-color: #bfd1e6;
+  width: 100%;
+  height: 100vh;
+  clip-path: var(--hero-div);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 @layer base {
   * {
     @apply p-0 m-0 box-border text-base;
@@ -9,5 +40,22 @@
 
   html {
     @apply scroll-smooth;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .btn-primary {
+    @apply w-32 md:w-44 lg:w-64 text-[10px] md:text-sm px-4 py-2 bg-blue-300 text-gold rounded-md;
+  }
+
+  .btn-secondary {
+    @apply w-32 md:w-44 lg:w-64 text-[10px] md:text-sm px-4 py-2 text-blue-300 bg-gold rounded-md;
   }
 }
