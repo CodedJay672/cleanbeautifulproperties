@@ -21,6 +21,10 @@
     100% 0,
     0 0
   );
+
+  --social-proofs: polygon(0 70%, 100% 50%, 100% 0, 0 0);
+
+  --about-us: polygon(0 100%, 100% 50%, 100% 0, 0 0);
 }
 
 .hero-curve {
@@ -31,6 +35,42 @@
   position: absolute;
   inset: 0;
   z-index: 0;
+}
+
+.social-proofs {
+  background-color: #bfd1e6;
+  clip-path: var(--social-proofs);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.about-section {
+  background-color: #bfd1e6;
+  clip-path: var(--about-us);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  scrollbar-width: thin;
+  width: 10px;
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #dddddd;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #5c5c7b;
+  border-radius: 50px;
 }
 
 @layer base {

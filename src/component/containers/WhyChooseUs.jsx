@@ -16,22 +16,22 @@ const WhyChooseUs = () => {
           <ChooseItem
             title="P1"
             text="Local Market Expertise"
-            bgColor="#6C8DAC"
+            bgColor="#6C8DACA3"
           />
           <ChooseItem
-            title="P1"
+            title="P2"
             text="Tailored Solutions For Your Needs"
-            bgColor="#5E5FA4"
+            bgColor="#5E5FA4A3"
           />
           <ChooseItem
-            title="P1"
+            title="P3"
             text="Access to Exclusive Listings"
-            bgColor="#E0B435"
+            bgColor="#E0B435A3"
           />
           <ChooseItem
-            title="P1"
+            title="P4"
             text="Dedicated Support From Start To Finish"
-            bgColor="#D6C3A9"
+            bgColor="#D6C3A9A3"
           />
         </div>
         <p className="text-center mt-4 w-[484px]">
