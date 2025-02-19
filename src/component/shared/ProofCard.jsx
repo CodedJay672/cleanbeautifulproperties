@@ -1,4 +1,5 @@
 import React from "react";
+import { CgProfile } from "react-icons/cg";
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
 
@@ -17,7 +18,9 @@ const ProofCard = ({ text, name, title }) => {
         </div>
       </div>
       <div className="flex-center gap-1">
-        <div className="w-10 h-10 bg-blue-200 rounded-full" />
+        <div className="w-10 h-10 flex-center rounded-full">
+          <CgProfile className="text-blue-200 w-full h-full" />
+        </div>
         <div className="flex-1">
           <h3 className="font-semibold leading-4">{name}</h3>
           <p className="text-xs text-left">{title}</p>

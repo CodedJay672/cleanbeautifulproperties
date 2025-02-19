@@ -5,7 +5,7 @@ import Button from "../shared/Button";
 
 const WhyChooseUs = () => {
   return (
-    <section className="wrapper flex-center flex-col">
+    <section className="wrapper flex-center flex-col" id="why-choose-us">
       <Heading title="Why Choose Us" />
       <p className="text-center mt-4 w-[484px]">
         join real estate developers and investors all over the world to make

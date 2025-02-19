@@ -4,7 +4,7 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 
 const AboutUs = () => {
   return (
-    <section className="wrapper flex-center flex-col">
+    <section className="wrapper flex-center flex-col" id="about-us">
       <div className="w-full lg:w-4/5 relative">
         <div className="about-section h-[300px] flex gap-5 pt-10">
           <img

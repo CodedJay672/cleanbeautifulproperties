@@ -35,23 +35,23 @@ const SocialProofs = () => {
             >
               <ProofCard
                 text="I couldn’t have asked for a better team. They helped us sell our home quickly and above asking price!"
-                name="Jane Doe"
-                title="MD/CEO Leadway Assurance"
+                name="Mike Andersan"
+                title="Home Ownner"
               />
               <ProofCard
-                text="I couldn’t have asked for a better team. They helped us sell our home quickly and above asking price!"
-                name="Jane Doe"
-                title="MD/CEO Leadway Assurance"
+                text="Clean beautiful properties encouraged me to buy a property from Highbridge homes back in 2010. Today that property is worth 3 times the amount I bought it for."
+                name="Florence Okafor"
+                title="Business Owner"
               />
               <ProofCard
-                text="I couldn’t have asked for a better team. They helped us sell our home quickly and above asking price!"
-                name="Jane Doe"
-                title="MD/CEO Leadway Assurance"
+                text="I would recommend clean beautiful properties to anyone looking to buy a property. They are professional and very efficient."
+                name="Anita Johnson"
+                title="Real estate agent"
               />
               <ProofCard
-                text="I couldn’t have asked for a better team. They helped us sell our home quickly and above asking price!"
-                name="Jane Doe"
-                title="MD/CEO Leadway Assurance"
+                text="My client was very happy with the property I sold to him. He was so happy that he referred me to his friends and family."
+                name="Samuel Amos"
+                title="No. 1 Realtor"
               />
             </div>
             <div

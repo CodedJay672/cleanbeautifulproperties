@@ -13,8 +13,8 @@ const HeroSection = () => {
     <header className="w-full h-dvh relative flex flex-col" id="home">
       <div className="hero-curve px-4 md:px-6 lg:px-10 xl:px-20 overflow-hidden">
         <div className="w-full py-2 flex justify-between items-center relative z-10 backdrop-blur-md">
-          <div className="flex-center">
-            <img src="/assets/logo.png" alt="footer logo" className="size-8" />
+          <a href="/" className="flex-center">
+            <img src="/assets/logo.png" alt="logo" className="size-8" />
             <div className="pt-1">
               <h3 className="text-xs md:text-sm lg:text-[24px] font-bold text-blue-300 tracking-[11px]">
                 CLEAN
@@ -23,7 +23,7 @@ const HeroSection = () => {
                 Beautiful Properties
               </p>
             </div>
-          </div>
+          </a>
           <ul className="list-none p-2 flex justify-between items-center">
             {navLinks.map((link) => (
               <li className="text-sm py-2 px-4 font-semibold" key={link.link}>

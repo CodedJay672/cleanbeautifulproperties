@@ -1,13 +1,13 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import Heading from "../shared/Heading";
 import { FAQItems } from "../../constants";
 import { IoCaretDownOutline } from "react-icons/io5";
 
 const FAQ = () => {
-  const faqRef = useRef(null);
+  const [qstIndex, setQstIndex] = useState(null);
 
-  const handleShowAnswer = () => {
-    const classes = faqRef.current.classList();
+  const handleQstChange = (index) => {
+    setQstIndex(index);
   };
 
   return (
@@ -18,7 +18,7 @@ const FAQ = () => {
           <div
             key={idx}
             className="hover:bg-blue-50 cursor-pointer rounded-lg transition-all py-2 px-4 my-6 md:my-7 lg:my-8"
-            onClick={handleShowAnswer}
+            onClick={() => handleQstChange(idx)}
           >
             <div className="flex-center">
               <p className="text-blue-300 text-sm md:text-base lg:text-lg flex-1">
@@ -26,7 +26,11 @@ const FAQ = () => {
               </p>
               <IoCaretDownOutline size={10} className="text-blue-300 ml-20" />
             </div>
-            <p className="text-blue-300 text-xs md:text-sm lg:text-base hidden">
+            <p
+              className={`text-gray-600 text-xs md:text-sm lg:text-base transition-all ${
+                qstIndex === idx ? "block" : "hidden"
+              }`}
+            >
               {item.answer}
             </p>
           </div>
